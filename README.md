@@ -12,11 +12,6 @@ This plugin has been in my [.vim configuration](https://github.com/Jaymon/.vim) 
 The comments.vim plugin was great, but it didn't support newer languages like Golang, and since Vim includes a `commentstring` variable for all the filetypes it supports, I figured I could write a plugin that commented out blocks of code using that variable instead of relying on lots of conditional statements, also, I really wanted to use the same mapping to comment/uncomment the code, and that's how Commentify was born.
 
 
-## Installation
-
-Use [pathogen](https://github.com/tpope/vim-pathogen). Clone this repo into the bundle directory.
-
-
 ## Usage
 
 By default, Commentify maps the ctrl-c key to commenting and uncommenting.
@@ -31,4 +26,17 @@ to map normal mode, use the `commentify` function:
 to map visual mode, use the `RangeCommentify` function:
 
     commentify#RangeCommentify()
+
+
+## Installation
+
+Use [pathogen](https://github.com/tpope/vim-pathogen). Clone this repo into the bundle directory.
+
+    $ cd /path/to/.vim/bundle
+    $ git clone git@github.com:Jaymon/vim-commentify.git commentify
+
+
+## License
+
+copyrighted by me, and distributed under the same terms as Vim, see `:help license`.
 

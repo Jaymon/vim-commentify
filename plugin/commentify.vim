@@ -1,3 +1,4 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Quickly comment out chunks of code
 "
 " for the escaping:
@@ -14,6 +15,7 @@
 "
 " Handy :help
 " :help function-range-example
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Exit if already loaded
 if exists("g:loaded_commentify")
@@ -22,14 +24,17 @@ endif
 
 let g:loaded_commentify="v0.1.2"
 
+
 if !exists("g:commentify_map_keys")
   let g:commentify_map_keys = 1
 endif
 
+
 if g:commentify_map_keys
+  " map commenting/uncommenting to (ctrl-c)
   " key-mappings for comment/uncomment line in normal mode
   noremap  <silent> <C-C> :call commentify#Commentify()<CR>
-  " key-mappings for range comment/uncomment lines in visual <Shift-V> mode
+  " key-mappings for range comment/uncomment lines in visual mode
   vnoremap  <silent> <C-C> :call commentify#RangeCommentify()<CR>
 endif
 
